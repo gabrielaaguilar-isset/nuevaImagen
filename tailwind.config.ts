@@ -13,7 +13,27 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors:{
+        black: '#010205',
+        purple: '#6B2ADC',
+        yellow: '#F2EB21',
+        gray: '#C7C7C7'
+      },
+      animation:{
+        
+          'infinite-scroll': 'infinite-scroll 5s linear infinite',
+        
+      },
+      keyframes:{
+        'infinite-scroll':{
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+        }
+      },
+     
+  
     },
+    
   },
   plugins: [],
 };

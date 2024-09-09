@@ -1,33 +1,54 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #6B2ADC;
+  border-radius: 10px 15px;
+}
+body::-webkit-scrollbar-track {
+  background-color: #ececec;
+}
+body::-webkit-scrollbar:vertical {
+  width: 8px;
+}
+::selection {
+  color: #fff;
+  background-color: #6B2ADC;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.backgroundImgBanner {
+  background: center / cover no-repeat
+    url("../assets/images/backgroundImgBanner03.svg");
+}
+.backgroundCard {
+  background: center / contain no-repeat url("../assets/images/cardImagen.svg");
+}
+
+.backgroundFinal {
+  background: center / cover no-repeat
+    url("../assets/images/background-gray.svg");
+}
+
+.backgroundPortfolio {
+  background: center / cover no-repeat
+    url("../assets/images/background-portfoliio.svg");
+}
+
+
+.backgroundLastOne{
+  background: right / contain no-repeat
+    url("../assets/images/background-purple.svg");
+}
+.swiper-pagination-bullet-active{
+background: white!important;
+}
+@media (max-width: 768px){
+  .backgroundLastOne{
+    background: left / 134% no-repeat
+      url("../assets/images/background-purpleMobile.svg");
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+  
 }
