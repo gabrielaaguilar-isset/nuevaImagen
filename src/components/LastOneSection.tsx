@@ -3,7 +3,7 @@ import Titles from "./Titles";
 
 const LastOneSection = () => {
   return (
-    <div className="bg-white rounded-[35px] flex flex-col lg:flex-row mx-[16px] p-4 md:px-[80px] items-center ">
+    <div className="bg-white rounded-[35px] flex flex-col lg:flex-row mx-[16px] p-4 md:px-[80px] items-center 2xl:mx-28 ">
       <div className="mt-8 mb-4 lg:max-w-[40%]">
         <Titles text="Habilidades y Competencias" customClass="max-w-[330px]" />
         <Paragraphs text="Apasionada por la tecnología y el desarrollo web, con una sólida base técnica y una mentalidad abierta hacia la innovación. Siempre en búsqueda de aprender y aplicar las últimas tendencias tecnológicas, garantizo soluciones eficientes y adaptadas a las necesidades actuales." />

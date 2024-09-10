@@ -9,7 +9,7 @@ export default function Home() {
     <Banner />
     <AboutMe />
     <ContainerFinal />
-    <Footer />
+
   </>
   );
 }

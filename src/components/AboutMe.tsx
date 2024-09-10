@@ -7,11 +7,14 @@ import Image from "next/image";
 
 export const AboutMe = () => {
   return (
-    <div className="relative overflow-hidden">
+    <div className="relative overflow-hidden ">
       <div className="bg-yellow rounded-full w-26 h-26 blur-[190px] lg:w-96  lg:h-96 absolute lg:-right-24 lg:blur-[260px] top-95 lg:top-[366px]"></div>
-      <div className="md:px-[80px] mx-[16px] p-4 mt-[70px] relative overflow-hidden">
+      <div className="md:px-[80px] mx-[16px] p-4 mt-[70px] relative overflow-hidden 2xl:mx-28">
         <div className="flex flex-col md:flex-row  z-10">
-          <Titles text="Sobre mí" customClass="min-w-[362px]" />
+          <div className="min-w-[362px]">
+          <Titles text="Sobre mí" customClass=" text-left" />
+          </div>
+          
           <Paragraphs
             text="Soy una desarrolladora web con experiencia en React, WordPress, WooCommerce y e-learning, además de poseer conocimientos básicos en PHP. Mi formación incluye habilidades avanzadas en diseño utilizando herramientas como Photoshop y Figma. Me apasiona la programación, el diseño y el aprendizaje continuo, y disfruto trabajando en equipo y enfrentando nuevos desafíos. Mi objetivo es seguir creciendo profesionalmente como desarrolladora web y ofrecer soluciones innovadoras que satisfagan las necesidades y expectativas de los clientes. Estoy dispuesta a aprender y adaptarme a nuevas tecnologías para alcanzar este objetivo."
             customClass="text-justify md:text-left"

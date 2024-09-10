@@ -35,7 +35,7 @@ export const Navbar = () => {
 
   return (
     <nav
-      className={`bg-white border-gray-200 transition-transform duration-300  bg-clip-padding backdrop-filter backdrop-blur-md  bg-opacity-90 ${
+      className={`bg-white border-gray-200 transition-transform duration-300  bg-clip-padding backdrop-filter backdrop-blur-md  bg-opacity-90 2xl:px-4 ${
         isSticky ? "sticky top-0 z-50" : ""
       } ${showHeader || isOpen ? "translate-y-0" : "-translate-y-full"}`}
     >

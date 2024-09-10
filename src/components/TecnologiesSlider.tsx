@@ -93,7 +93,7 @@ export const TecnologiesSlider = ({ customClass }: Props) => {
       spaceBetween={spaceBetwen}
       modules={[Pagination]}
       className={`w-[100%] h-[100%] ${customClass} relative `}
-      autoplay
+      autoplay={true}
       loop
     >
       {tecnologies.map(({ img, alt }) => (

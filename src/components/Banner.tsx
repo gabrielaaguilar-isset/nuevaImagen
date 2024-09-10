@@ -6,9 +6,9 @@ import imgCard from "../assets/images/cardImagen.svg";
 import { Paragraphs } from "./Paragraphs";
 export const Banner = () => {
   return (
-    <div className="backgroundImgBanner mx-[16px] relative rounded-[35px] overflow-hidden top py-12">
+    <div className="backgroundImgBanner mx-[16px] relative rounded-[35px] overflow-hidden top py-12 2xl:mx-28">
 
-      <div className="bg-purple rounded-full w-36 h-36 blur-[190px] lg:w-96  lg:h-96 absolute lg:-right-24 lg:blur-[260px] top-15 lg:-top-28"></div>
+      <div className="bg-purple rounded-full w-36 h-36 blur-[200px] lg:w-96  lg:h-96 absolute lg:-right-24 lg:blur-[260px] top-5 lg:-top-28"></div>
       <div className="flex flex-col md:flex-row pt-8 p-4 items-center md:px-[60px] lg:justify-between lg:mb-[40px] ">
         <div className="lg:w-[55%]">
           <h1 className="font-semibold text-[42px] lg:text-[72px] leading-[110%] mb-6">
@@ -21,9 +21,9 @@ export const Banner = () => {
             digitales, las paginas web que he hecho y mis habilidades" customClass="max-w-[557px]" />
           <button
             type="button"
-            className="flex mt-[26px] md:py-[16px] py-[13px] px-[22px] bg-black rounded-[70px] md:px-[32px] text-white text-[16px] mb-6"
+            className="flex mt-[26px] md:py-[16px] py-[13px] px-[22px] bg-black rounded-[70px] md:px-[32px] text-white text-[16px] mb-6" 
           >
-            Hablemos
+            <Link href="https://api.whatsapp.com/send/?phone=573133207188&text&type=phone_number&app_absent=0" target="_blank">Hablemos</Link>
             <Image
               src={arrowRight}
               alt="arrow right"
@@ -35,7 +35,7 @@ export const Banner = () => {
           <div className="relative">
             <Image src={imgCard} alt="imagen de presentacion" />
             <div className="absolute top-[10%] left-[5%] lg:left-[12%]">
-              <Link href="#" className="text-white font-semibold">
+              <Link href="https://api.whatsapp.com/send/?phone=573133207188&text&type=phone_number&app_absent=0" target="_blank" className="text-white font-semibold">
                 <div className="flex items-center lg:mt-5  lg:mb-[10%]">
                   <hr className="w-[54px] my-4 bg-white border-2 mr-3 " />
                   <h2 className="text-[14px] text-white">consigue tu cita ahora</h2>
@@ -58,7 +58,7 @@ export const Banner = () => {
         <TecnologiesSlider customClass="mt-5" />
       </div>
 
-      <div className="bg-yellow rounded-full w-40 h-40 blur-[200px] lg:w-79 lg:h-66 absolute left-0 lg:blur-[120px]  bottom-4"></div>
+      <div className="bg-yellow rounded-full w-40 h-40 blur-[90px] lg:w-79 lg:h-66 absolute lg:blur-[120px]  bottom-0 right-0 lg:left-0"></div>
     </div>
   );
 };
